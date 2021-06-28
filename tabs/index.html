@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tab</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <ul role="tablist" aria-label="Tabs">
+        <li
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-1"
+          id="tab-1"
+          tabindex="0"
+        >
+          First Tab
+        </li>
+        <li
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-2"
+          id="tab-2"
+          tabindex="-1"
+        >
+          Second Tab
+        </li>
+        <li
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-3"
+          id="tab-3"
+          tabindex="-1"
+        >
+          Third Tab
+        </li>
+      </ul>
+      <section
+        id="panel-1"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-1"
+      >
+        <p>Beautiful panel</p>
+      </section>
+      <section
+        id="panel-2"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-2"
+        hidden
+      >
+        <p>Dazziling panel</p>
+      </section>
+      <section
+        id="panel-3"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-3"
+        hidden
+      >
+        <p>Fabulous panel</p>
+      </section>
+    </div>
+    <script src="tabs.js" async defer></script>
+  </body>
+</html>

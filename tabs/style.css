@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 125%;
+  line-height: 1.5;
+  margin: 1.5rem auto;
+  max-width: 40rem;
+  padding: 0 1rem;
+}
+
+li {
+  outline: none;
+}
+
+[role='tablist'] {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+}
+
+[role='tab'][aria-selected='true'] {
+  border-bottom: 4px solid rebeccapurple;
+  transition-duration: 3s;
+  transition-property: opacity, left;
+}
+
+@media (max-width: 550px) {
+  [role='tablist'] li,
+  [role='tablist'] a {
+    display: block;
+    position: static;
+  }
+}
